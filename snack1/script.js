@@ -24,4 +24,33 @@ const bici = [
 
 //console.table(bici);
 
+//trovo la bici con peso minore e creo ciclo for
+const {nome, peso} = bici[0];
+
+let biciPesoMin = {
+    nome,
+    peso,
+};
+
+const  h1 = document.querySelector("h1");
+
+for (let i = 1; i < bici.length; i++) {
+    
+    const {peso, nome} = bici[i];
+    
+
+        if (biciPesoMin.peso > peso) {
+            biciPesoMin = {
+                nome,
+                peso,
+        };
+    };
+};
+
+
+//stampo in html la bici con peso minore
+h1.innerHTML = `<h1>${biciPesoMin.nome} , ${biciPesoMin.peso}</h1>`
+
+//console.log(biciPesoMin);
+
 
