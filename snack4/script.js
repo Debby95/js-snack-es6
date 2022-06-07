@@ -43,3 +43,11 @@ const studentsList = students.map((students) => {
 })
 
 console.table(studentsList);
+
+//+ nuovo arrey con lista degli studenti che hanno voto maggiore di 70
+const studentsListWithGradesMoreThan70 = students.filter((students) => {
+
+    return students.grades > 70;
+});
+
+console.table(studentsListWithGradesMoreThan70);
