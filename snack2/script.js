@@ -30,7 +30,7 @@ const footballSquad = [
 console.table(footballSquad);
 
 //genero numeri random per punti tot e falli subiti
-for (let i = 1; i <= footballSquad.length; i++) {
+for (let i = 0; i <= footballSquad.length; i++) {
     
     //creo numeri random per punti tot
     footballSquad.puntiTot = Math.floor(Math.random() * 10);
@@ -38,11 +38,17 @@ for (let i = 1; i <= footballSquad.length; i++) {
     //creo numeri random per falli subiti
     footballSquad.falliSubiti = Math.floor(Math.random() * 5);
 
-    //stampo in consoe i punti tot e i falli subiti
+    //stampo in console i punti tot e i falli subiti
     console.table(footballSquad.puntiTot, footballSquad.falliSubiti);
+
+    //creo un arrey usando la destructuring i cui elementi contengono solo nomi e falli subiti
+
+    const {nome, falliSubiti} = footballSquad[i];
+
+    console.table(nome, footballSquad.falliSubiti);
 };
 
-//creo un arrey usando la destructuring i cui elementi contengono solo nomi e falli subiti
+
 
 
 
