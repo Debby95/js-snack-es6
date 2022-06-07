@@ -49,7 +49,7 @@ for (let i = 1; i < bici.length; i++) {
 
 
 //stampo in html la bici con peso minore
-h1.innerHTML = `<h1>${biciPesoMin.nome} , ${biciPesoMin.peso}</h1>`
+h1.innerHTML = `<h1>${biciPesoMin.nome} , ${biciPesoMin.peso}kg</h1>`
 
 //console.log(biciPesoMin);
 
