@@ -35,12 +35,8 @@ let students = [
 //+ nuovo arrey con i nomi degli studenti in maiuscolo
 const studentsList = students.map((students) => {
     
-    students = students.name.toUpperCase();
-
-    return {
-        students,
-    }
-})
+    return students.name.toUpperCase();
+});
 
 console.table(studentsList);
 
@@ -51,3 +47,11 @@ const studentsListWithGradesMoreThan70 = students.filter((students) => {
 });
 
 console.table(studentsListWithGradesMoreThan70);
+
+//+ arrey con lista studenti che hanno un voto maggiore di 70 e un id maggiore di 120
+const studentsListGrade70Id120 = students.filter((students) => {
+
+    return students.grades > 70 && students.id > 120;
+});
+
+console.table(studentsListGrade70Id120);
